@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Papeleria del Tianguis</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- CSS Repositorios -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- Estylos -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Firebase API-->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+</head>
+
+<body>
+
+<!-- ======= Barra Superior ======= -->
+<div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
+  <div class="container d-flex align-items-center">
+    <div class="contact-info mr-auto">
+      <ul>
+        <li><i class="icofont-envelope"></i><a href="mailto:contact@example.com" target="_blank">papeleriadeltianguis@gmail.com</a></li>
+        <li><i class="icofont-phone"></i><a href="https://api.whatsapp.com/send?phone=525512179850&amp;text=¡Hola! Los contacto por medio de la página oficial de *Papeleria del Tianguis*." target="_blank">WhatsApp-5512179850</a></li>
+        <li><i class="icofont-clock-time icofont-flip-horizontal"></i> Lun - Sab 9am - 6pm</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+  <div class="container d-flex align-items-center">
+    <a href="#header" class="logo mr-auto scrollto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+    <nav class="nav-menu d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="#header">Inicio</a></li>
+        <li><a href="#about">Conócenos</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li class="drop-down"><a href="#portfolio">Catalogo</a>
+          <ul>
+            <li><a href="catalogo.html">Ver Catalogo</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- ======= Header ======= -->
+<!-- ======= Slides Section ======= -->
+<section id="hero" class="d-flex justify-cntent-center align-items-center">
+  <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="carousel-container">
+        <h2 class="animate__animated animate__fadeInDown">Bienvenido a <span>Papeleria del Tianguis</span></h2>
+        <p class="animate__animated animate__fadeInUp">Inherentemente el ser humano crea, copia, modifica y repite... ¿Cómo lo haras tú?</p>
+        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Ver más</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="carousel-container">
+        <h2 class="animate__animated animate__fadeInDown">Material de arte</h2>
+        <p class="animate__animated animate__fadeInUp">Y si coloreamos nuestras tarde, ¿qué usarias tú? ¿óleo, acuarela, acrílico, lápices de colores? Cuéntame</p>
+        <a href="#portfolio" class="btn-get-started animate__animated animate__fadeInUp scrollto">Ver más</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="carousel-container">
+        <h2 class="animate__animated animate__fadeInDown">Plumones</h2>
+        <p class="animate__animated animate__fadeInUp">Claro que si, ¡pintar con plumones es lo máximo!</p>
+        <a href="#portfolio" class="btn-get-started animate__animated animate__fadeInUp scrollto">Ver más</a>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
+</section><!-- Fin Slides -->
+
+<main id="main">
+  <!-- ======= Icon Boxes Section ======= -->
+  <section id="icon-boxes" class="icon-boxes">
+    <div class="container">
+
+      <div class="row">
+        
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4 class="title"><a href="#portfolio">Oficina</a></h4>
+            <p class="description">Puede haber de todo en la oficina, sin embargo, lo que menos hay son las cosas que más se ocupan (plumas, marcatextos, clips, memorias usb, hojas blancas,post it, etc.)</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxs-school"></i></div>
+            <h4 class="title"><a href="#portfolio">Escolar</a></h4>
+            <p class="description">Manejamos material con fines académicos como: lápices de colores, libretas, plumones, crayolas, tijeras, gomas, etc.; se procura para todo nivel escolar que se desee alcanzar</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-image-alt"></i></div>
+            <h4 class="title"><a href="#portfolio">Arte&Diseño</a></h4>
+            <p class="description">Todos somos buenos, todos podemos lograrlo, solo necesitamos el material indicado que usar. Y para saberlo, intentemos ocupar la mayor cantidad posible</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-laptop"></i></div>
+            <h4 class="title"><a href="#portfolio">Computo</a></h4>
+            <p class="description">Las memorias USB y microSD no deberian faltar, asi como los Discos duros o algun otro extra, pregunta por el que necesites.</p>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+    </div>
+  </section><!-- Fin Icon Boxes Section -->
+
+  <!-- ======= AboutUs Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Sobre Nosotros</h2>
+
+        <p>
+          Somos un proyecto independiente pero diferente a lo ya establecido, nos especializamos en productos de arte y entregas en metro en la CDMX.
+          <br>
+          Contamos con tienda fisica por si deseas visitarnos, contamos con todas las medidas sanitarias.
+        </p>
+      </div>
+
+      <div class="row content">
+        <div class="col-lg-6">
+          <p>
+              Sigue nuestras tematicas y dejanos conocerte mas que a un cliente, te dejamos los enlaces para poder participar.
+          </p>
+          <ul>
+            
+            <li><i class="ri-check-double-line"></i><a href="#portfolio">Sorteos/Rifas</a></li>
+            <li><i class="ri-check-double-line"></i><a href="#portfolio">Muestranos tu Creatividad</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <p>
+              Deseas conocer que opinan nuestros clientes, presiona el siguiente enlace y dejanos tu opinion! 
+          </p>
+          <a href="https://www.facebook.com/pg/papeleriatianguis/reviews/?ref=page_internal" target="_blank"class="btn-learn-more">Opiniones</a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- Fin AboutUs Section -->
+  
+  <!-- ======= Marcas  ======= -->
+  <section id="clients" class="clients">    
+    <div class="container" data-aos="zoom-in">
+      <div class="owl-carousel clients-carousel">
+        <img src="assets/img/clients/client-1.png" alt="">
+        <img src="assets/img/clients/client-2.png" alt="">
+        <img src="assets/img/clients/client-3.png" alt="">
+        <img src="assets/img/clients/client-4.png" alt="">
+        <img src="assets/img/clients/client-5.png" alt="">
+        <img src="assets/img/clients/client-6.png" alt="">
+        <img src="assets/img/clients/client-7.png" alt="">
+        <img src="assets/img/clients/client-8.png" alt="">
+        <img src="assets/img/clients/client-9.png" alt="">
+        <img src="assets/img/clients/client-10.png" alt="">
+      </div>
+    </div>
+  </section><!-- Fin Marcas  -->
+
+  <!-- ======= Servicios  ======= -->
+  <section id="services" class="services">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Servicios</h2>
+        <p> Hola!! esperemos te encuentres bien de salud, recuerda que tenemos estos servicios para tu comodidad.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box">
+            <i class="bx bx-train"></i>
+            <h4><a >Entregas en Metro CDMX</a></h4>
+            <p>Si lo tuyo son las compras en linea de metro tenemos esta opcion para ti</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-box">
+            <i class="bx bx-package"></i>
+            <h4><a >Envios a todo Mexico-CDMX</a></h4>
+            <p>Realizamos envios a todo el interior de la republica y area metropolitana CDMX</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-box">
+            <i class='bx bx-credit-card'></i>
+            <h4><a >Pago con Tarjeta Escolar (Verde)</a></h4>
+            <p>Haz valer ese apoyo que recibes con nosotros aceptamos ya que la tarjeta verde</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
+          <div class="icon-box">
+            <i class='bx bx-shield-quarter'></i>
+            <h4><a >Compras Seguras</a></h4>
+            <p>Aceptamos pagos con tarjeta, transferencia bancaria, pago contra entrega para tu comodidad </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- Fin Servicios  -->
+
+  <!-- ======= Contacto  ======= -->
+  <section id="cta" class="cta">
+    <div class="container">
+
+      <div class="row" data-aos="zoom-in">
+        <div class="col-lg-9 text-center text-lg-left">
+          <h3>Realiza tu pedido por WatsApp</h3>
+          <p> Contamos con un Operador 24/7 para atender tu proximo pedido</p>
+        </div>
+        <div class="col-lg-3 cta-btn-container text-center">
+          <a class="cta-btn align-middle" href="https://api.whatsapp.com/send?phone=525523407117&amp;text=¡Hola! Los contacto por medio de la página oficial de *Papeleria del Tianguis*." target="_blank"><i class='bx bxl-whatsapp'></i> Contactar</a>
+          
+        </div>
+      </div>
+
+    </div>
+  </section><!-- Fin Contacto  -->
+
+  <!-- ======= Catalogo  ======= -->
+  <section id="portfolio" class="portfoio">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Productos</h2>
+        <p>Te mostramos lo mas solicitado de cada categoria.</p>
+        <br>
+        <a  class="btn-get-started " href="catalogo.html">Ver catalogo completo</a>      
+      </div>
+
+      <div class="row"> 
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">Todo</li>
+            <li data-filter=".filter-app">Arte</li>
+            <li data-filter=".filter-card">Escuela</li>
+            <li data-filter=".filter-web">Oficina</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <img src="assets/img/portfolio/IMG_0289.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Pintura acrílica marca Pinto</h4>
+            <p>Tonos metálicos $ 35</p>
+            <a href="assets/img/portfolio/IMG_0289.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+            <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <img src="assets/img/portfolio/IMG_0071.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Índices de plástico 100 piezas</h4>
+            <p>$10</p>
+            <a href="assets/img/portfolio/IMG_0071.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <img src="assets/img/portfolio/IMG_0297.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Goma moldeable marca LYRA</h4>
+            <p>$25</p>
+            <a href="assets/img/portfolio/IMG_0297.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+            <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <img src="assets/img/portfolio/IMG_5743.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Cuaderno profesional Monky pasta dura doble espiral 100 hojas</h4>
+            <p>$35</p>
+            <a href="assets/img/portfolio/IMG_5743.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+            <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <img src="assets/img/portfolio/IMG_5815.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Lápiz de madera triangular doble punta: lápiz grafito más lápiz rojo</h4>
+            <p>$4</p>
+            <a href="assets/img/portfolio/IMG_5815.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+            <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <img src="assets/img/portfolio/IMG_0043.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Juego de pinceles planos pelo sintético</h4>
+            <p>$35</p>
+            <a href="assets/img/portfolio/IMG_0043.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+            <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <img src="assets/img/portfolio/IMG_5949.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Lápices de colores Norma 24 + 4 piezas</h4>
+            <p>$125</p>
+            <a href="assets/img/portfolio/IMG_5949.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+            <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <img src="assets/img/portfolio/IMG_5810.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Lápiz de madera triangular Maped</h4>
+            <p>$9</p>
+            <a href="assets/img/portfolio/IMG_5810.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+            <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <img src="assets/img/portfolio/IMG_5954.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Pluma de cuerpo metálico Zebra F301</h4>
+            <p>$40</p>
+            <a href="assets/img/portfolio/IMG_5954.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- Fin Catalogo  -->
+
+  <!-- ======= Marcas  ======= -->
+  <section id="clients" class="clients">
+    <div class="container" data-aos="zoom-in">
+
+      <div class="owl-carousel clients-carousel">
+        <img src="assets/img/clients/client-1.png" alt="">
+        <img src="assets/img/clients/client-2.png" alt="">
+        <img src="assets/img/clients/client-3.png" alt="">
+        <img src="assets/img/clients/client-4.png" alt="">
+        <img src="assets/img/clients/client-5.png" alt="">
+        <img src="assets/img/clients/client-6.png" alt="">
+        <img src="assets/img/clients/client-7.png" alt="">
+        <img src="assets/img/clients/client-8.png" alt="">
+      </div>
+
+    </div>
+  </section><!-- Fin Marcas  -->
+
+  <!-- ======= Preguntas Frecuentes  ======= -->
+  <section id="faq" class="faq section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="faq-list">
+        <ul>
+          <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">¿Hacen envios a mi Estado/Municipio? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+              <p>
+                  Si cuenta con la cobertura de Correos de Mexico te lo enviamos, o si prefieres otro medio nos ponemos de acuerdo.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">¿Cuál es el costo de envio? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+              <p>
+                El costo de envio se calcula por el peso y la distancia, este se evalua por cada pedido.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="200">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">¿Que forma de pago aceptan? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+              <p>
+                Aceptamos pagos con tarjeta verde escolar, pago en efectivo y con tarjeta, tambien puedes hacer tu pago via transferencia bancaria.
+              </p>
+            </div>
+          </li>
+
+          
+
+          <li data-aos="fade-up" data-aos-delay="400">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">¿Tiene Garantia? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+              <p>
+                Todos nuestros productos cuentan con garantia, si llega alguno maltratado o roto, nosotros te lo cambiamos sin costo.
+              </p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </section><!-- Fin FAQ  -->
+
+  <!-- ======= Contacto  ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Contacto</h2>
+      </div>
+
+      <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
+
+        <div class="col-lg-5">
+          <div class="info">
+            <div class="address">
+              <i class="icofont-google-map"></i>
+              <h4>Direccion:</h4>
+              <p>Av. de las Torres, Iztapalapa CDMX</p>
+            </div>
+
+            <div class="email">
+              <i class="icofont-envelope"></i>
+              <h4>Correo:</h4>
+              <p>papeleriadeltianguis@gmail.com</p>
+            </div>
+
+            <div class="phone">
+              <a href="https://api.whatsapp.com/send?phone=525512179850&amp;text=¡Hola! Los contacto por medio de la página oficial de *Papeleria del Tianguis*." target="_blank"><i class="bx bxl-whatsapp"></i></a>
+              <h4>Numero:</h4>
+              <p>55 2340-7117</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d235.33288200629136!2d-99.07369101962601!3d19.311650286215983!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1611794235313!5m2!1ses-419!2smx" width="600" height="330" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    </div>
+  </section><!-- Fin Contacto  -->
+
+</main><!-- Fin #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Enlaces Principales</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#about">Nosotros</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#services">Servicios</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Catalogo</a></li>
+            <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Politica de Privacidad</a></li> -->
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h4>Contacto</h4>
+          <p>
+            Av. las Torres <br>
+            Iztapalapa, CP 09860<br>
+            Ciudad de Mexico <br><br>
+            <strong>Telefono:</strong> +52 25512179850<br>
+            <strong>Correo:</strong> papeleriadeltianguis@gmail.com<br>
+          </p>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-info">
+          <h3>Redes Sociales</h3>
+          <p>Sigenos en nuestras redes sociales, psst ... puede que el proximo ganador de nustros sorteos seas tu !! </p>
+          <div class="social-links mt-3">
+            <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+            <a href="https://www.facebook.com/papeleriatianguis/" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="credits">
+      Designed by <a href="https://eparache.github.io/ParaTechWeb/">ParaTech</a>
+    </div>
+  </div>
+</footer><!-- Fin Footer -->
+
+<a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+<div id="preloader"></div>
+<!--  JS Scripts -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="assets/vendor/venobox/venobox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<!--  Main JS  -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

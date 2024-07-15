@@ -1,4 +1,4 @@
 Proyecto: Papeleria del Tianguis
-URL: https://github.com//papedeltianguis.com
-Autor: Oartech
+URL: https://eparache.github.io/PapeleriadelTianguis/index.html
+Autor: Paratech
 Licencia: Abierta
